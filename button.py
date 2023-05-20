@@ -21,7 +21,7 @@ root.title("Button Me")
 #Second argument is the text
 #For the third argument you have to call the function
 #Idenitfy the place for the widget
-buttonlove= tk.Buttonlove(root,text="Click Me!", command=button_click)
-buttonlove.pack()
+button= tk.Button(root,text="Click Me!", command=button_click)
+button.pack()
 #Create the mainloop is an event, method from the root object and will keep the root window open
 root.mainloop()
