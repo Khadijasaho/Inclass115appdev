@@ -1,4 +1,4 @@
-#create a tkiner application and start with import
+#create a tkinter application and start with import
 import tkinter as tk
 from tkinter import ttk
 
