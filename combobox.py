@@ -12,6 +12,23 @@ def on_select(event):
      #Create a print function the say selected item and the selected items intot the argument parameter
      print("Selected item", selected_item)
 
-     #root the window then take the widget object and put it in the widgeted window 
+     #parent group root the window then take the widget object and put it in the widgeted window 
      root = tk.Tk()
      root.title("Combobox Exapmle")
+     # Creating an array of items, declae the tiems into an array
+     items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"]
+
+     #Create combobox object
+     #Going to bind events to the objects, using on_select
+     combo_box = ttk.Combobox(root, values=items)
+     combo_box.bind("<<ComboboxSelected>>", on_select)
+
+     combo_box.pack()
+
+    #Reoccuring window 
+     root.mainloop()
+
+
+      
+
+
